@@ -15,7 +15,7 @@ function Navbar() {
           </svg>
         </button>
         <ul className={`md:flex md:space-x-4 ${isOpen ? 'block' : 'hidden'} absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto bg-md-bg md:bg-transparent p-4 md:p-0`}>
-          {['Home', 'About', 'Skills', 'Resume', 'Blogs', 'Projects', 'Experience'].map((item) => (
+          {['Home', 'About', 'Skills', 'Resume', 'Contact', 'Blogs', 'Projects', 'Experience'].map((item) => (
             <li key={item} className="mb-2 md:mb-0">
               <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-md-green hover:text-md-yellow transition-colors duration-200">
                 {item}
